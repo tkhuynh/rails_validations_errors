@@ -5,9 +5,9 @@ Starter code and challenges for <a href="https://github.com/sf-wdi-24/modules/tr
 ## Getting Started
 
 1. Fork this repo, and clone it into your `develop` folder on your local machine.
-2. Run `rake db:create db:migrate` in the Terminal to create your local database and run the migrations.
+2. Run `rake db:create db:migrate` in the Terminal to create and migrate your database.
 3. Run `rails s` in the Terminal to start your server.
-4. Navigate to `localhost:3000` in the browser - you should see the Rails welcome page.
+4. Navigate to `localhost:3000` in the browser.
 
 ## Challenges
 
