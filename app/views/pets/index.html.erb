@@ -1,5 +1,16 @@
 <h1>All Pets</h1>
 <hr>
-<% @pets.each do |pet| %>
-  <p><%= pet.name %> - <%= pet.breed %></p>
-<% end %>
+<div class="row">
+	<% @pets.each do |pet| %>
+		<div class="col-sm-8">
+  		<p><%= pet.name %> - <%= pet.breed %></p>
+		</div>
+		<div class="col-sm-4">
+		<%= link_to "View",pet_path(pet), method: :get %> | 
+		<%= link_to "Edit", edit_pet_path(pet), method: :get %> | 
+		<%= link_to "Delete", pet, method: :destroy %>
+		</div>
+	<% end %>
+</div>
+
+<%= link_to "Create New Pet", new_pet_path, method: :get %>
